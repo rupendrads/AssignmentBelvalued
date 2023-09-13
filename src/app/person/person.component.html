@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h4>Persons List</h4>
+        </div>
+        <div class="card-body">
+            <div *ngFor="let person of persons;">                
+                <div class="row">
+                    <a [routerLink]="['/person/', person.Id]">{{person.Title}} {{person.Forename}} {{person.Surname}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
